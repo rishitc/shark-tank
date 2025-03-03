@@ -39,6 +39,10 @@
   flex-direction: column;
 }
 
+.dialogue-text-container p {
+  line-height: 1.35em;;
+}
+
 .dialogue-text {
   margin: 0;
   flex-grow: 1;
