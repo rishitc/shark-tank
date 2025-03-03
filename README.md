@@ -30,4 +30,8 @@
 ![Pitch presentation view](./screenshots/screenshot-3.png)
 ![Chat interaction with AI sharks](./screenshots/screenshot-4.png)
 
+### Shark Tank AI Application Logo
+
+![Shark Tank AI Application Logo](./screenshots/logo.png)
+
 ---
