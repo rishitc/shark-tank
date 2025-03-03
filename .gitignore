@@ -1,0 +1,6 @@
+build/bin
+node_modules
+frontend/dist
+frontend/src/assets/.DS_Store
+.DS_Store
+credentials.json

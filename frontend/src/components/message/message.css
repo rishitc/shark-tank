@@ -1,0 +1,75 @@
+/* DialogueBox component styles */
+.dialogue-box {
+  display: flex;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #190B28;
+  max-width: 100%;
+}
+
+.avatar-container-shark {
+  flex-shrink: 0;
+  margin-right: 15px;
+  align-items: flex-start;
+}
+
+.avatar-name {
+  margin: 12px 0 0 0;
+  font-size: 12px;
+  color: #ccc;
+  text-align: center;
+}
+
+.avatar-container-entrepreneur {
+  flex-shrink: 0;
+  margin-left: 15px;
+}
+
+.avatar-placeholder {
+  width: 60px;
+  height: 60px;
+  border-radius: 8px;
+  margin: 0 auto 5px auto;
+}
+
+.dialogue-text-container {
+  display: flex;
+  flex-grow: 1;
+  word-wrap: break-word;
+  flex-direction: column;
+}
+
+.dialogue-text {
+  margin: 0;
+  flex-grow: 1;
+  word-wrap: break-word;
+}
+
+/* Different styles for shark and entrepreneur */
+.dialogue-box.shark .avatar-placeholder {
+  background-image: url("../../assets/images/mark_cuban.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.dialogue-box.entrepreneur .avatar-placeholder {
+  background-image: url("../../assets/images/image.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 480px) {
+  .dialogue-box {
+    padding: 10px;
+  }
+
+  .avatar-placeholder {
+    width: 30px;
+    height: 30px;
+  }
+
+  .avatar-container {
+    margin-right: 10px;
+  }
+}

@@ -1,0 +1,86 @@
+#app {
+    height: 100vh;
+}
+
+#logo {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    padding: 10% 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+}
+
+.input-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 8%;
+}
+
+.input-box .btn {
+    width: 60px;
+    height: 40px;
+    line-height: 30px;
+    border-radius: 3px;
+    border: none;
+    margin: 0 0 0 15px;
+    padding: 0 8px;
+    cursor: pointer;
+    flex-basis: 15%;
+    background-color: #136F63;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+.input-box .input {
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    height: 20px;
+    font-size: 18px;
+    line-height: 20px;
+    min-height: 20px;
+    padding: 10px 10px;
+    flex-basis: 85%;
+    background-color: rgba(240, 240, 240, 1);
+    -webkit-font-smoothing: antialiased;
+}
+
+.input-box .btn:hover[disabled] {
+    cursor: not-allowed;
+}
+
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 97%;
+    margin: 10px;
+}
+
+
+.input-box .btn:hover:not([disabled]) {
+    border: none;
+    background-color: #005249;
+}
+
+.input-box .input:focus {
+    border: none;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.message-window {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    flex-basis: 92%;
+    position: sticky;
+    overflow-y:scroll;
+    overflow-anchor: none;
+  }

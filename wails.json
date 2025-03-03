@@ -1,0 +1,28 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "Shark Tank",
+  "outputfilename": "shark-tank",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Rishit Chaudhary",
+    "email": "12199011+rishitc@users.noreply.github.com"
+  },
+  "info": {
+    "companyName": "",
+    "productName": "",
+    "copyright": "",
+    "comments": "",
+    "fileAssociations": [
+      {
+        "ext": "png",
+        "name": "App Icon",
+        "description": "Wails file",
+        "iconName": "appicon",
+        "role": "Editor"
+      }
+    ]
+  }
+}

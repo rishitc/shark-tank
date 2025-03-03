@@ -1,0 +1,155 @@
+.idea-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  margin: 10px auto;
+  padding: 20px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+.idea-form-title {
+  text-align: center;
+}
+
+.idea-form-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.idea-form-subtitle {
+  text-align: center;
+  font-style: italic;
+}
+
+/*
+html {
+  background-image: url("./assets/images/background.webp");
+  background-size: cover;
+  background-position: 0% 50%;
+  width: 100%;
+  color: white;
+  overflow-x: hidden;
+  margin: 0;
+}
+*/
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.form-hint {
+  font-size: 0.8rem;
+  margin-bottom: 4px;
+  font-style: italic;
+}
+
+input,
+textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  box-shadow: 0 0 4px 8px rgba(242, 220, 93, 0.5);
+  outline: 4px solid #5ba8c4;
+}
+
+input:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+}
+
+.offer-group {
+  margin-bottom: 10px;
+}
+
+.offer-inputs {
+  display: flex;
+  gap: 20px;
+}
+
+.offer-input label {
+  font-size: 13px;
+}
+
+.offer-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.submit-button,
+.reset-button {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.submit-button:hover {
+  background-color: #0069d9;
+}
+.submit-button:hover:disabled {
+  cursor: not-allowed;
+}
+
+.reset-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+.reset-button:hover {
+  background-color: #5a6268;
+}
+
+/* Add responsive styling */
+@media (max-width: 600px) {
+  .offer-inputs {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
